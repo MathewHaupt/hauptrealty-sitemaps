@@ -12,6 +12,15 @@ SEEDS = [
     "/leduc/", "/beaumont/", "/fort-saskatchewan/", "/devon/", "/morinville/",
     "/acreages-for-sale-edmonton/", "/land-for-sale-alberta/", "/alberta-lake-properties-for-sale/",
     "/edmonton-condos/",
+    # Sierra caps a search at 3,000 results, so Edmonton is also crawled by region and price band
+    "/southwest-edmonton/", "/southeast-edmonton/", "/west-edmonton/", "/northwest-edmonton/",
+    "/northeast-edmonton/", "/central-edmonton/", "/downtown-edmonton/",
+    "/edmonton-homes-for-sale-under-300k/", "/edmonton-homes-for-sale-under-400k/",
+    "/edmonton-homes-for-sale-under-500k/", "/edmonton-homes-for-sale-under-600k/",
+    "/edmonton-homes-for-sale-under-700k/", "/edmonton-homes-for-sale-under-800k/",
+    "/edmonton-homes-for-sale-under-1-million/", "/edmonton-homes-for-sale-over-1m/",
+    "/rural-strathcona-county/", "/rural-parkland-county/",
+    "/rural-leduc-county/", "/rural-sturgeon-county/",
 ]
 LINK = re.compile(r'/property-search/detail/\d+/[A-Za-z0-9]+/[a-z0-9\-]+/')
 UA = "HauptRealtySitemapBot/1.0 (+https://www.hauptrealty.com/)"
