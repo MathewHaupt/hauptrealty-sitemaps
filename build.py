@@ -82,7 +82,8 @@ def main():
         "<!doctype html><meta charset=utf-8><title>Haupt Realty sitemaps</title>"
         f"<p>Listing sitemap for www.hauptrealty.com: <a href=sitemap-listings.xml>sitemap-listings.xml</a> "
         f"({len(urls)} URLs, built {today}).</p>")
-    open("site/CNAME", "w").write("sitemaps.hauptrealty.com\n")
+    # Google Search Console ownership file for this GitHub Pages site
+    open("site/google2a01a90a5899b508.html", "w").write("google-site-verification: google2a01a90a5899b508.html")
     open("site/.nojekyll", "w").write("")
     print(f"TOTAL {len(urls)}")
 
